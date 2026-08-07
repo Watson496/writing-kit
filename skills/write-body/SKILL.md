@@ -1,45 +1,47 @@
 ---
 name: write-body
-description: 完成したdesign noteから、style_guidelineに従って本文（散文）を書き起こす。ブロック単位で進め、design noteの命題を漏らさず・盛らず本文化する。「本文書いて」「design noteから本文」「write-body」「本文に起こして」で起動。
+description: 完成したdesign noteから、guidelineに従って本文（散文）を書き起こす。です・ます調とだ・である調の両方に対応。ブロック単位で進め、design noteの命題を漏らさず・盛らず本文化する。「本文書いて」「design noteから本文」「write-body」「本文に起こして」で起動。
 ---
 
 # write-body
 
-design noteを入力として、writing-kitのstyle_guidelineに従った本文（散文）を執筆する。
+design noteを入力として、writing-kitのguidelineに従った本文（散文）を執筆する。
 
 ## 前提
 
-- 本skillと同じディレクトリの `guidelines/style_guideline.md` を必ず読み込む
+- 本skillと同じディレクトリの `guidelines/common_guideline.md` を必ず読み込む
+- 文体に応じて `guidelines/style_desu_masu.md`（です・ます調）または `guidelines/style_da_dearu.md`（だ・である調）を読み込む
 - design noteの構造を正しく解釈するため `guidelines/design_note_guideline.md` も読み込む
 
 ## 進め方
 
-1. **対象を確認する**。ファイルパスまたは貼り付けられたテキストからdesign noteを受け取る。想定する媒体（Confluence / developers blog / noteなど）や、既に書かれている本文の一部があるかを確認する
+1. **対象を確認する**。ファイルパスまたは貼り付けられたテキストからdesign noteを受け取る。想定する媒体（Confluence / developers blog / noteなど）、文体（です・ます調／だ・である調）、既に書かれている本文の一部があるかを確認する。文体の指定がなければ媒体の確認とあわせてユーザーに質問する — 黙ってどちらかをデフォルトにしない
 
-2. **guidelineを読み込む**。style_guidelineとdesign_note_guidelineを読む
+2. **guidelineを読み込む**。common_guideline、選択された文体の文体別guideline、design_note_guidelineを読む
 
 3. **構造を把握する**。design noteの空行で区切られたブロックが本文の1つの論のまとまり（数段落〜小節）に対応する。ブロックの並び順がそのまま本文の論の順序になる
 
 4. **ブロック単位で書く**。以下を守る：
-    - 本文はです・ます調（style_guidelineの文体の基本に従う）
-    - design noteのbulletを本文の文章そのものにするのではなく、bulletの命題を本文でどう述べるかを考えて書く。bullet文言をです・ます調に機械変換するだけの書き方はしない
+    - 文末・語り口は文体別guidelineに従う
+    - design noteのbulletを本文の文章そのものにするのではなく、bulletの命題を本文でどう述べるかを考えて書く。bullet文言を本文の文体に機械変換するだけの書き方はしない
+    - design noteに標示された認識の帰属（定説か自分の推論か）を保存し、文体別guidelineのヘッジ表現形で書き分ける。design noteから帰属が読み取れない命題があれば、勝手に決めずユーザーに確認する
     - bullet間の順序をそのまま本文の論の順序として保つ
     - 子bulletは親bulletの命題の列挙・詳細・根拠なので、本文でもその関係が伝わるように書く
     - セクション間のつなぎは次セクションの冒頭に置く（前セクションの末尾に予告を入れない）
     - 「まとめると以下の通りです」のような形式的なまとめを置かない
-    - style_guidelineが禁じている言い回し（対句・体言止め決め台詞・キーワードを1文で名付ける短文・空虚な形容・修辞疑問・「〜わけです」以外の見得を切る演出など）を使わない
+    - common_guidelineが禁じている修辞（対句・体言止め決め台詞・キーワードを1文で名付ける短文・空虚な形容・修辞疑問・見得を切る演出など）を使わない
 
 5. **書きすぎ・書き足りなさをチェックする**：
     - design noteに書かれた命題を全て本文で述べているか（漏れの検出）
     - design noteにない主張を勝手に付け足していないか（盛りの検出）
-    - style_guidelineに反する表記・言い回しが混入していないか
+    - common_guideline・文体別guidelineに反する表記・言い回しが混入していないか
 
 ## 進め方の注意
 
 - 節（セクション）単位、あるいはブロック単位でユーザーに確認しながら進める。一気に全文を出して終わり、ではない
 - design noteのbulletは本文の下書きではなく設計。命題を保存しつつ、その命題を最も伝わる形で述べる文を組み立てる
 - 具体例の不足を感じたら、design noteに記載がなくても追加すべきか・どのような例が良いかをユーザーに聞く（勝手に例を作らない）
-- 引用・出典を伴うbullet（「著者『書名』」形式）については、本文中で `Author (Year)` 形式または `著者名『書名』` 形式で埋め込み、参考文献の書式もstyle_guidelineに従う
+- 引用・出典を伴うbullet（「著者『書名』」形式）については、本文中で `Author (Year)` 形式または `著者名『書名』` 形式で埋め込み、参考文献の書式もcommon_guidelineに従う
 
 ## 出力
 
