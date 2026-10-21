@@ -9,9 +9,9 @@ design noteを入力として、writing-kitのguidelineに従った本文（散�
 
 ## 前提
 
-- 本skillと同じディレクトリの `guidelines/common_guideline.md` を必ず読み込む
-- 文体に応じて `guidelines/style_desu_masu.md`（です・ます調）または `guidelines/style_da_dearu.md`（だ・である調）を読み込む
-- design noteの構造を正しく解釈するため `guidelines/design_note_guideline.md` も読み込む
+- 本skillのディレクトリを基準にした `../../guidelines/common_guideline.md` を必ず読み込む
+- 文体に応じて `../../guidelines/style_desu_masu.md`（です・ます調）または `../../guidelines/style_da_dearu.md`（だ・である調）を読み込む
+- design noteの構造を正しく解釈するため `../../guidelines/design_note_guideline.md` も読み込む
 
 ## 進め方
 

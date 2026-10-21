@@ -9,10 +9,10 @@ writing-kitのguidelineと照合して、逸脱箇所を指摘し、修正案を
 
 ## 前提
 
-- 本skillと同じディレクトリのguidelineファイルを必ず読み込む：
-    - 対象が何であれ → `guidelines/common_guideline.md`
-    - 本文（散文）が対象 → 加えて、対象の文体に応じた `guidelines/style_desu_masu.md` または `guidelines/style_da_dearu.md`。文体は対象文章の文末から自動判別し、判別できない場合（短い断片など）はユーザーに質問する
-    - design note（bullet構造）が対象 → 加えて `guidelines/design_note_guideline.md`
+- 本skillのディレクトリを基準にした次のパスのguidelineファイルを必ず読み込む：
+    - 対象が何であれ → `../../guidelines/common_guideline.md`
+    - 本文（散文）が対象 → 加えて、対象の文体に応じた `../../guidelines/style_desu_masu.md` または `../../guidelines/style_da_dearu.md`。文体は対象文章の文末から自動判別し、判別できない場合（短い断片など）はユーザーに質問する
+    - design note（bullet構造）が対象 → 加えて `../../guidelines/design_note_guideline.md`
     - 本文とdesign noteが混在している場合は、両方読み込んで該当箇所ごとに照合する
 
 ## 進め方

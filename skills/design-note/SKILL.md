@@ -13,7 +13,7 @@ design noteは本文の下書きではなく、論証の設計図。ここで論
 
 ## 前提
 
-- 本skillと同じディレクトリの `guidelines/design_note_guideline.md` と `guidelines/common_guideline.md` を必ず読み込む。common_guidelineの共通ルール（認識の帰属・命題/概念の扱い・修辞・論の進め方・引用出典・表記）はdesign noteにも適用される
+- 本skillのディレクトリを基準にした `../../guidelines/design_note_guideline.md` と `../../guidelines/common_guideline.md` を必ず読み込む。common_guidelineの共通ルール（認識の帰属・命題/概念の扱い・修辞・論の進め方・引用出典・表記）はdesign noteにも適用される
 
 ## 進め方
 
