@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Claude Code用とCodex用のマニフェストのversionが一致しているかを確かめる
+        id: version
+        run: |
+          claude_version=$(jq -r .version .claude-plugin/plugin.json)
+          codex_version=$(jq -r .version .codex-plugin/plugin.json)
+          if [ "$claude_version" != "$codex_version" ]; then
+            echo "versionが一致しない: .claude-plugin/plugin.json = $claude_version, .codex-plugin/plugin.json = $codex_version"
+            exit 1
+          fi
+          echo "tag=v$claude_version" >> "$GITHUB_OUTPUT"
+      - name: tagに対応するreleaseがなければ作成する
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            echo "$TAG のreleaseは作成済みのため、何もしない"
+            exit 0
+          fi
+          gh release create "$TAG" --target "$GITHUB_SHA" --title "$TAG" --generate-notes
