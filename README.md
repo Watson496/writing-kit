@@ -54,3 +54,28 @@ pluginから提供されるskillは、`writing-kit:design-note`、`writing-kit:w
 4. 書き上がった本文を `style-review` skillでチェック、または自分で該当guidelineと照合する
 
 design noteは論の設計図であり、本文の下書きではない。ここで論の流れと素材の配置を確定させ、言い回しは本文執筆時に考える。定説と自分の推論のどちらなのか（認識の帰属）もdesign noteの段階で読み取れる形にしておく。
+
+## release手順
+
+Claude Code用のマニフェスト（`.claude-plugin/plugin.json`）とCodex用のマニフェスト（`.codex-plugin/plugin.json`）の両方の`version`を正とし、releaseのtag `vX.Y.Z` はそこから導出する。`version`を上げるPRをmainにmergeすると、`.github/workflows/release.yml`がtagとreleaseを作成する。
+
+1. mainを最新にする
+
+    ```
+    git switch main
+    git pull
+    ```
+
+2. [Semantic Versioning](https://semver.org/lang/ja/)に従い、直前のtag以降の変更から、patch / minor / majorのどれに当たるかを決める。1.0.0未満の間は、後方互換性のない変更でもminorを上げる
+
+3. `version`を上げるPRを作る
+
+    - 両方のマニフェストの`version`を同じ値に書き換える
+    - ブランチ：`chore/release-vX.Y.Z`
+    - commit / PRタイトル：`chore(release): vX.Y.Z`
+    - PRの中身は`version`の更新のみとする
+    - PR本文に、直前のtag以降の変更と、増分の根拠を書く
+
+4. PRをmergeする。mergeすると、releaseのworkflowが`vX.Y.Z`のtagとreleaseを作成する。release noteは、直前のrelease以降にmergeされたPRから自動生成される
+
+5. ActionsでReleaseのworkflowが成功したことと、Releasesページで`vX.Y.Z`のtagが`version`を上げたcommitを指していることを確認する
