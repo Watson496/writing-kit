@@ -1,6 +1,6 @@
 {
   "name": "writing-kit",
-  "description": "日本語の長文を設計、執筆、レビューするためのガイドラインとskill。",
+  "description": "日本語の文書を箇条書きまたは散文で執筆し、レビューするためのガイドラインとskill。",
   "owner": {
     "name": "Watson496"
   },
@@ -8,7 +8,7 @@
     {
       "name": "writing-kit",
       "source": "./",
-      "description": "日本語の長文を設計、執筆、レビューするためのガイドラインとskill。"
+      "description": "日本語の文書を箇条書きまたは散文で執筆し、レビューするためのガイドラインとskill。"
     }
   ]
 }
