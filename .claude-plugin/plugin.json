@@ -1,7 +1,7 @@
 {
   "name": "writing-kit",
   "displayName": "writing-kit",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "日本語の文書を箇条書きまたは散文で執筆し、レビューするためのガイドラインとskill。",
   "author": {
     "name": "Watson496"
