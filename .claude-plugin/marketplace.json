@@ -1,0 +1,14 @@
+{
+  "name": "writing-kit",
+  "description": "日本語の長文を設計、執筆、レビューするためのガイドラインとskill。",
+  "owner": {
+    "name": "Watson496"
+  },
+  "plugins": [
+    {
+      "name": "writing-kit",
+      "source": "./",
+      "description": "日本語の長文を設計、執筆、レビューするためのガイドラインとskill。"
+    }
+  ]
+}

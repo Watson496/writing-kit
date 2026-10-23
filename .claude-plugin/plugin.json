@@ -1,0 +1,17 @@
+{
+  "name": "writing-kit",
+  "displayName": "writing-kit",
+  "version": "0.2.0",
+  "description": "日本語の長文を設計、執筆、レビューするためのガイドラインとskill。",
+  "author": {
+    "name": "Watson496"
+  },
+  "homepage": "https://github.com/Watson496/writing-kit",
+  "repository": "https://github.com/Watson496/writing-kit",
+  "keywords": [
+    "writing",
+    "japanese",
+    "style-guide"
+  ],
+  "skills": "./skills/"
+}
