@@ -1,6 +1,6 @@
 # common_guideline.md
 
-このkitで書くすべての文書に共通して適用されるガイドライン。散文の文書を書くときは用途に応じて `style_article.md`（記事）または `style_academic.md`（論文のような論説文）を、箇条書きを地の文とする文書を書くときは `style_bullet.md` を、本ファイルとあわせて適用する。
+このkitで書くすべての文書に共通して適用されるガイドライン。散文の文書を書くときは用途に応じて `style_article.md`（記事）、`style_academic.md`（論文のような論説文）、`style_memo.md`（自分用のメモ）のいずれかを、箇条書きを地の文とする文書を書くときは `style_bullet.md` を、本ファイルとあわせて適用する。
 
 ## 認識の帰属
 
