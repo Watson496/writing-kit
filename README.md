@@ -6,8 +6,9 @@ WaTTsonの日本語長文執筆のためのガイドライン集。ブログ記�
 
 - `guidelines/`：スタイルガイドライン本体
     - `common_guideline.md`：全文書共通のガイド。箇条書き・散文のどちらで書くときも適用される。認識の帰属・命題/概念の扱い・修辞・論の進め方・読者の前提・引用出典・表記・Markdown
-    - `style_desu_masu.md`：です・ます調の散文のスタイルガイド。文体・語り口の表現形・段落の作り方・つなぎの言い回し・本文中の箇条書きの運用
-    - `style_da_dearu.md`：だ・である調（論文のような硬めの論説文）の散文のスタイルガイド。構成は`style_desu_masu.md`と同じ
+    - `style_article.md`：ブログやConfluenceなどの記事を、です・ます調の散文で書くためのスタイルガイド。文体・語り口の表現形・段落の作り方・つなぎの言い回し・本文中の箇条書きの運用
+    - `style_academic.md`：論文のような硬めの論説文を、だ・である調の散文で書くためのスタイルガイド。構成は`style_article.md`と同じ
+    - `style_memo.md`：調べたこと・試したこと・考えたことを書き留める自分用のメモを、砕けただ・である調で書くためのスタイルガイド。文体・語り口・進め方・素材と出典の置き方・地の文の置き方
     - `style_bullet.md`：箇条書きを地の文とする文書のスタイルガイド。基本形式・認識の帰属・並び順とまとまり・ネスト・文献の書き方
 - `skills/`：agent skill定義
     - `write/`：トピック・素材・議論の内容などから、guidelineに従って箇条書きまたは散文の文書を書く
@@ -17,7 +18,7 @@ WaTTsonの日本語長文執筆のためのガイドライン集。ブログ記�
 
 ## guidelineを直接参照する
 
-`guidelines/` 配下のファイルを執筆時に手元で参照する。または、AIツール（Claude Code等）に読み込ませて執筆・レビュー補助に使う。何を書くときも `common_guideline.md` を土台にし、散文なら文体に応じて `style_desu_masu.md` / `style_da_dearu.md` を、箇条書きなら `style_bullet.md` を重ねて使う。
+`guidelines/` 配下のファイルを執筆時に手元で参照する。または、AIツール（Claude Code等）に読み込ませて執筆・レビュー補助に使う。何を書くときも `common_guideline.md` を土台にし、散文なら用途に応じて `style_article.md` / `style_academic.md` / `style_memo.md` を、箇条書きなら `style_bullet.md` を重ねて使う。
 
 ## pluginとして使う
 

@@ -1,6 +1,6 @@
-# style_desu_masu.md
+# style_article.md
 
-です・ます調の本文（散文）を書くときのガイドライン。`common_guideline.md` とあわせて適用する。だ・である調の本文には `style_da_dearu.md` を使う。
+ブログやConfluenceなどの記事を、です・ます調の散文で書くときのガイドライン。`common_guideline.md` とあわせて適用する。論文のような硬めの論説文には `style_academic.md` を使う。
 
 ## 文体の基本
 
