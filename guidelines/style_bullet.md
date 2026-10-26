@@ -1,6 +1,6 @@
 # style_bullet.md
 
-箇条書きを地の文として書く文書のガイドライン。`common_guideline.md` とあわせて適用する。散文の文書の中に置く箇条書きには、本ファイルではなく文体別ガイドライン（`style_desu_masu.md` / `style_da_dearu.md`）の「本文中の箇条書き」を使う。
+箇条書きを地の文として書く文書のガイドライン。`common_guideline.md` とあわせて適用する。散文の文書の中に置く箇条書きには、本ファイルではなく用途別のガイドライン（`style_article.md` / `style_academic.md`）の「本文中の箇条書き」を使う。
 
 ## 基本形式
 
